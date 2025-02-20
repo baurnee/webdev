@@ -1,0 +1,106 @@
+#navbar {
+    background-color: antiquewhite;
+    position: relative;
+    overflow: hidden;
+}
+
+#navbar_center {
+    float: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#navbar_right {
+    float: right;
+}
+
+#navbar a {
+    float: left;
+    text-align: center;
+    padding-left: 7px;
+    padding-right: 7px;
+    border: solid burlywood 2px;
+}
+
+#navbar a:hover {
+    background-color: rgb(197, 165, 123);
+}
+/*links to our tops bottoms etc, catalogue page*/
+.flex {
+    
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+.column {
+    display: block;
+    margin-left: auto;
+    width: 100%;
+    max-width: fit-content;
+    background-color: #f1f1f1;
+    margin: px;
+    padding: 6px;
+    
+}
+#tops {
+    float: inline-start;
+}
+#shoes {
+    float: inline-start;
+}
+/*catalogue section ends here*/
+
+
+
+
+a:link {
+    font-family: 'Courier New', Courier, monospace;
+    text-decoration: none;
+}
+
+a:visited {
+    font-family: 'Courier New', Courier, monospace;
+    text-decoration: none;
+}
+
+
+
+
+#store_name {
+    
+    display: block;
+    justify-self: center;
+    max-width: 1200px;
+}
+
+/* favourites banner*/
+#title_bg {
+    width: 100%;
+    background-color: white;
+}
+
+/* favourites banner*/
+#intro_bg {
+    width: 100%;
+    
+
+}
+
+/* favourites banner*/
+#introductory {
+    display: block;
+    justify-self: center;
+    width: 99%;
+    max-width: 1000px;
+    background-color: black;
+}
+
+html {
+    background-color: black;
+    border: 5px burlywood solid;
+    min-height: 1080px;
+}
+
