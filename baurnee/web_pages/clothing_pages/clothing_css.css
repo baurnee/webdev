@@ -10,7 +10,6 @@
 }
 
 #navbar_center {
-
     float: none;
     position: absolute;
     top: 50%;
@@ -18,13 +17,27 @@
     transform: translate(-50%, -50%);
 }
 
+
+
 #navbar_right {
-    display: block;
     float: right;
+    font-family: 'Courier New', Courier, monospace;
+    text-decoration: none;
+}
+
+#searchbar {
+    border: solid 2px burlywood;
+    background-color: antiquewhite;
+    padding-bottom: 2px;
+    text-align: center;
+    font-size: 18px;
+    font-family: 'Courier New', Courier, monospace;
+    text-decoration: none;
 }
 
 #navbar a {
     float: left;
+    
     text-align: center;
     padding-left: 7px;
     padding-right: 7px;
@@ -45,14 +58,21 @@ a:visited {
     text-decoration: none;
     color: black;
 }
-
-#searchbar {
-    border: solid 1px burlywood;
-    background-color: antiquewhite;
+#sidebar {
     text-align: center;
-    font-family: 'Courier New', Courier, monospace;
-    text-decoration: none;
+    background-color: antiquewhite;
+    border: solid saddlebrown 3px;
+    min-width: 150px;
+    max-width: 275px;
+    min-height: 1080px;
+    max-height: 1080px;
+    overflow: hidden;
 }
+
+#selection {
+    font-size: 20px;
+}
+
 
 /*stupid drop down stuff*/
 .container {
@@ -69,11 +89,9 @@ a:visited {
 }
 
 #drop_content {
-    width: 150px;
     position:absolute;
     display: none;
     top: 100%;
-    z-index: 9999;
 
 }
 
@@ -81,7 +99,6 @@ a:visited {
     float:none;
     display: block;
     background-color: wheat;
-    border: solid burlywood 1px;
 }
 
 :hover > #drop_content {
@@ -94,92 +111,15 @@ a:visited {
     display: inline;
 }
 
-
-
-/*links to our tops bottoms etc, catalogue page*/
-.flex {
-    margin-left: 2px;
-    margin-right: 2px;
-    display: flex;
-    justify-content: center;
-    
-    
-}
-
-@media only screen and (max-width: 900px) {
-    .flex {
-        margin-left: 2px;
-        margin-right: 2px;
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-    }
-    
-}
-
-
-
-.column {
-    margin-left: auto;
-    margin-right: auto;
-    justify-self: center;
+#sidebar a {
     display: block;
-    padding: 4px;
-    width: 100%;
-    max-width: 300px;
-    background-color: #f1f1f1;
-    
-    
-}
-#tops {
-    float: inline-start;
-}
-#shoes {
-    float: inline-start;
-}
-/*catalogue section ends here*/
-
-
-
-
-
-
-
-
-#store_name {
-    margin-left: 10px;
-    margin-right: 10px;
-    display: block;
-    justify-self: center;
-    width: 100%;
-    min-width: 700px;
-    max-width: 1200px;
 }
 
-/* favourites banner*/
-#title_bg {
-    width: 100%;
-    background-color: black;
+#sidebar p {
+    word-wrap: break-word;
 }
-
-/* favourites banner*/
-#intro_bg {
-    width: 100%;
-    
-
-}
-
-/* favourites banner*/
-#introductory {
-    display: block;
-    justify-self: center;
-    width: 100%;
-    background-color: black;
-    max-width: 1300px;
-}
-
 body {
-    background-color: black;
+    background-color: black ;
     border: burlywood solid 2px;
     min-height: 1080px;
     
@@ -220,3 +160,7 @@ display the burger and remove center*/
         min-width: 850px;
     }
 }
+
+
+
+

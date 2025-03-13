@@ -2,27 +2,44 @@
 
 <html>
     <head>
+        <script src="../resources/javascript/scripts.js"></script>
+        <script src="https://kit.fontawesome.com/1a50ea100b.js" crossorigin="anonymous"></script>
         <title>Catalogue page</title>
         <link rel="stylesheet" href="style_sheet.css">
     </head>
 
-    <header>
+    
         
     <div id="navbar">
-
-        <div id="navbar_center">
-            <a href="#home">Home</a>
-            <a href="#catalogue">Catalogue</a>
-            <a href="#about_use">About us</a>
-        </div>
-        
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa-solid fa-bars"></i>
         <a href="#login" id="login">login/register</a>
-        
-        <div id="navbar_right">
-            <a href="#basket" id="basket">View basket</a>
+
+        <div id="navbar_center">         
+            <div class="parent_dropdown">
+
+                <a id="drop_button">Catalogue <strong>+</strong>
+                    <div id="drop_content" >
+                        <a href="../clothing_pages/tops_page.html">tops</a>
+                        <a href="../clothing_pages/bottoms_page.html">bottoms</a>
+                        <a href="../clothing_pages/shoes_page.html">shoes</a>
+                        <a href="../clothing_pages/accessories_page.html">accesories</a>
+                    </div>
+                </div>
+            </a>      
+            <a href="../main_page/catalogue_page.html">Home</a>
+            <a href="#about_us">About us</a>
+
         </div>
+            <div id="navbar_right">
+                <input type="text" id="searchbar" placeholder="search..">
+                <a href="#basket" id="basket">View basket</a>
+            </div>
+        </div>
+        
+        
     </div>
-    </header>
+    
     
     <main>
 
@@ -31,25 +48,37 @@
             <img src="resources/images/title_banner.png" id="store_name">
         </div>
         <div id="intro_bg">
-            <img src="resources/images/introductory_banner.png" id="introductory">
+            <img src="resources/images/landing_image.jpg" id="introductory">
         </div>
         
         <div class="flex">
             
-            <div id="topsxbottoms">
-                <img src="resources/images/TOPS_BANNER.png" class="column" id="tops" alt="" >
-                <img src="resources/images/bottoms_banner.png" class="column" id="bottoms" alt="" >
-            </div>
             
-            <div id="shoesxaccessories">    
-                <img src="resources/images/shoes_banner.png" class="column" id="shoes" alt="">
-                
-                <img src="resources/images/accessories_banner.png" class="column" id="accessories"  alt="">
-            </div>
+                <a href="../clothing_pages/tops_page.html">
+                    <img src="resources/images/tops_banner.png" class="column" id="tops" alt="" >
+                </a>
+            
+                <a href="../clothing_pages/bottoms_page.html">
+                    <img src="resources/images/bottoms_banner.png" class="column" id="bottoms" alt="" >
+                </a>
+            
+            
+            
+                <a href="../clothing_pages/shoes_page.html">
+                    <img src="resources/images/shoes_banner.png" class="column" id="shoes" alt="">
+                </a> 
+
+                <a href="../clothing_pages/accessories_page.html">
+                    <img src="resources/images/accessories_banner.png" class="column" id="accessories"  alt="">
+                </a>
+            
             
             
         </div>
         
+        <footer>
+            <!--useful links for support, terms & conditions, blablabla-->
+        </footer>
         
     </main>
 </html>

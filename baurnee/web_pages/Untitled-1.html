@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Popout Test</title>
+    <meta charset="UTF-8" />
+    <style>
+        .list {
+            display: flex;
+        }
+
+        .list li {
+            padding: 10px;
+        }
+         .dropdown {
+            position: absolute;
+            display: none;
+         }
+
+         .dropdown li {
+            list-style: none;
+         }
+         :hover > .dropdown {
+            display: block;
+         }
+
+         .container {
+            overflow: scroll;
+            height: 60px;
+         }
+
+         .big {
+            height: 500px;
+            background-color: yellow;
+         }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <ul class="list">
+            <li>Alpha</li>
+            <li>Beta</li>
+            <li>Cahrlie
+                <ul class="dropdown">
+                    <li>butch</li>
+                    <li>hoeeeeee</li>
+                    <li>idlllkkkk</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div class="big">pooper</div>
+</body>
+</html>
